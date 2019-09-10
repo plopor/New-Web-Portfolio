@@ -1,0 +1,204 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 3vh verdana;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.background {
+    background: url("introBG.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.aboutMe {
+    display: flex;
+    border: solid 1px #ffffff;
+    justify-content: center;
+    color: #ffffff;
+    background-color: transparent;
+    height: 190vh;
+    padding: 10vh 8vw;
+    margin-top: -100vh;
+}
+
+.animContainer {
+    height: 100vh;
+    border: solid 1px #ff0000;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+}
+
+.animRight {
+    margin-top: -100vh;
+    justify-content: flex-end;
+}
+
+.animLeft {
+    margin-top: -100vh;
+}
+
+.move {
+    position: absolute;
+}
+
+.treelineLeft {
+}
+
+.treelineRight {
+}
+
+.treelineLeftFast {
+}
+
+.meContainer {
+    border: solid 1px #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1px 1px;
+    z-index: 1000;
+    position: fixed;
+}
+
+.pfp {
+    text-align: center;
+    border: solid 1px #ffffff;
+    width: 50vh;
+    height: 50vh;
+}
+
+.headerText {
+    border: solid 1px #ffffff;
+    font-size: 8vh;
+}
+
+.subText {
+    border: solid 1px #ffffff;
+    font-size: 4vh;
+    color: #808080;
+}
+
+.headerContainer {
+    margin-top: -100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background: transparent;
+    opacity: 0.8;
+    padding: 2vh 8vw;
+    height: 10vh;
+    z-index: 1001;
+}
+
+.header {
+    border: solid 1px #000000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1px 1px;
+}
+
+.btn {
+    display: flex;
+    background: transparent;
+    align-items: center;
+    padding: 0 2vh;
+    border: none;
+    color: #ffffff;
+}
+
+    .btn:hover {
+        color: #245F4D;
+    }
+
+.home {
+    border: 1px solid #ffffff;
+    display: flex;
+}
+
+.rightOfContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects {
+    border: 1px solid #ffffff;
+    display: flex;
+}
+
+.resume {
+    border: 1px solid #ffffff;
+    margin-left: 8vw;
+    display: flex;
+}
+
+.otherStuff {
+    /*background-color: #0e0303;
+    opacity: 0.8;*/
+    box-shadow: 0 -8px 8px #13191A;
+    margin-top: 100vh;
+    background: url("introInvertBG.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    height: 100vh;
+    border: solid 1px #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3vh 8vw;
+}
+
+.introContainer {
+    /*border: solid 1px #000000;*/
+    color: #ffffff;
+    padding: 1px 1px;
+    display: flex;
+}
+
+.introInfo {
+    border: 1px solid #ffffff;
+}
+
+.carouselSect {
+    /*background: linear-gradient(to bottom, #245F4D, #56734F);*/
+    box-shadow: 0 -8px 8px #13191A;
+    height: 150vh;
+    border: solid 1px #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3vh 8vw;
+}
+
+.projectContainer {
+    border: solid 1px #000000;
+    color: #ffffff;
+    padding: 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.project {
+    border: 1px solid #ffffff;
+    width: 70vh;
+    height: 45vh;
+    z-index: 1000;
+}
