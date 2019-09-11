@@ -66,13 +66,16 @@
                 <div class="subText">Web Portfolio</div>
             </div>
             <div class="introContainer">
-                <div class="introButtons dropright">
-                    <a href="https://github.com/plopor" target="_blank" class="btnIntro"><i class="fa fa-github"></i> Github</a>
-                    <button href="#" class="btnIntro dropdown-toggle" disabled data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 3vw; display: block;"><i class="fa fa-envelope"></i> Contact Info</button>
-                    <div class="dropdown-menu">
-                        <a class="btn" href="">Phone#: (647) 806 8859</a>
-                        <a class="btn" href="">Email: bowen.luo@gmail.com</a>
+                <div class="introButtons">
+                    <div class="dropup">
+                        <button href="#" class="btnIntro dropdown-toggle" style="display: block;" disabled data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope"></i> Contact Info</button>
+                        <div class="dropdown-menu">
+                            <div class="dropText">Phone#: (647) 806 8859</div>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropText">Email: bowen.luo@gmail.com</div>
+                        </div>
                     </div>
+                    <a href="https://github.com/plopor" style="margin-left: 3vw;" target="_blank" class="btnIntro"><i class="fa fa-github"></i> Github</a>
                 </div>
                 <div class="introInfo">Hello there! Welcome to my work in progress web portfolio. Here, you will be able to find a few of my projects, my resumé, and whatever else I am currently testing out. Please have a look around!</div>
             </div>
@@ -111,7 +114,7 @@
                 else {
                     atTop = true;
                 }
-                if (scrollPercent >= 2) {
+                if (scrollPercent >= 1.99) {
                     pastIntro = true;
                 }
                 else {
@@ -175,6 +178,7 @@
         </div>
 
         <div class="carouselSect" id="car">
+            <div class="headerText" style="color: #ffffff; margin-top: 10vh;">Projects</div>
             <div class="projectContainer">
                 <div class="project">
                     <div id="carousel" class="carousel slide" data-ride="carousel">

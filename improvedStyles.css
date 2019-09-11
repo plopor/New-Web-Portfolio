@@ -105,11 +105,35 @@ body {
     /*border: solid 1px #ffffff;*/
 }
 
-.dropright {
+.dropup {
 }
 
-    .dropright:hover .dropdown-menu{
-        display: contents;
+    .dropup:hover .dropdown-menu{
+        display: inline-block;
+    }
+
+.dropText {
+    color: #ffffff;
+    padding: 0 2vw;
+    opacity: 0.5;
+    border-radius: 25px;
+    /*border: solid 1px #ffffff;*/
+}
+
+    .dropText:hover {
+        background: #56734F;
+        opacity: 1;
+    }
+
+.dropdown-menu {
+    background: #245F4D;
+    opacity: 0.5;
+    padding: 1vmin 1vmin;
+    border-radius: 10px;
+}
+
+    .dropdown-menu:hover {
+        opacity: 1;
     }
 
 .btnIntro {
@@ -222,13 +246,13 @@ body {
     box-shadow: 0 -8px 8px #13191A;
     height: 150vh;
     /*border: solid 1px #ffffff;*/
-    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column; 
     padding: 3vh 8vw;
 }
 
 .projectContainer {
-    margin-top: 10vh;
     /*border: solid 1px #000000;*/
     color: #ffffff;
     padding: 1px 1px;
