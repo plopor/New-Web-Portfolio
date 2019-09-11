@@ -51,6 +51,7 @@ body {
 
 .move {
     position: absolute;
+    min-height: 100%;
 }
 
 .treelineLeft {
