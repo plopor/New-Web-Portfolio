@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <meta charset="utf-8" />
     <title>Bowen's Improved Web Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="improvedStyles.css" />
 </head>
 <body>
@@ -44,7 +45,7 @@
                 var scrollPercent = scrollTop / height || 0;
                 treeOpacity = 1 - scrollPercent * scrollPercent * 1.2;
 
-                document.getElementById('yeet').innerHTML = scrollPercent;
+                /*document.getElementById('yeet').innerHTML = scrollPercent;*/
                 treelineLeft.style.top = scrollPercent * height / 2 + 'px';
                 treelineLeft.style.left = 0 - (scrollPercent * width) + 'px';
                 treelineRight.style.top = scrollPercent * height / 2 + 'px';
@@ -64,19 +65,30 @@
                 <div class="headerText">Bowen Luo</div>
                 <div class="subText">Web Portfolio</div>
             </div>
+            <div class="introContainer">
+                <div class="introButtons dropright">
+                    <a href="https://github.com/plopor" target="_blank" class="btnIntro"><i class="fa fa-github"></i> Github</a>
+                    <button href="#" class="btnIntro dropdown-toggle" disabled data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 3vw; display: block;"><i class="fa fa-envelope"></i> Contact Info</button>
+                    <div class="dropdown-menu">
+                        <a class="btn" href="">Phone#: (647) 806 8859</a>
+                        <a class="btn" href="">Email: bowen.luo@gmail.com</a>
+                    </div>
+                </div>
+                <div class="introInfo">Hello there! Welcome to my work in progress web portfolio. Here, you will be able to find a few of my projects, my resumé, and whatever else I am currently testing out. Please have a look around!</div>
+            </div>
         </div>
 
         <div class="headerContainer" id="stickyHead">
             <div class="header">
                 <div class="home">
-                    <a href="#" class="btn">Home</a>
+                    <a href="#" class="btn"><i class="fa fa-home"></i>Home</a>
                 </div>
                 <div class="rightOfContainer">
                     <div class="projects">
                         <a href="#car" class="btn">Projects</a>
                     </div>
                     <div class="resume">
-                        <a href="#" class="btn">Resume</a>
+                        <a href="#res" class="btn">Resume</a>
                     </div>
                 </div>
             </div>
@@ -155,9 +167,10 @@
             });
         </script>
 
-        <div class="otherStuff">
-            <div class="introContainer">
-                <div class="introInfo">Hello there! Welcome to my work in progress web portfolio. Here, you will be able to find a few of my projects, my resumé, and whatever else I am currently testing out. Please have a look around!</div>
+        <div class="otherStuff" id="res">
+            <div class="headerText" style="color: #ffffff;">Resume</div>
+            <div class="resumeContainer">
+                <iframe src="resume.pdf" style="width: 82vw; height: 70vh;"></iframe>
             </div>
         </div>
 
@@ -172,7 +185,12 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="red.jpg" style="width: 100%; height: 45vh;" alt="Intro">
-                                <div class="carousel-caption d-none d-md-block">Wanted to play Flappy Bird but you're really bad? Me too! Instead watch this neural net learn to play for you... After sacrificing a couple thousand innocent birds.</div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="home">
+                                        <a href="https://github.com/plopor/Flappy-Bird-AI" target="_blank" class="btn"><i class="fa fa-github"></i>Github Repo</a>
+                                    </div>
+                                    Wanted to play Flappy Bird but you're really bad? Me too! Instead watch this neural net learn to play for you... After sacrificing a couple thousand innocent birds.
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="flappy.gif" style="width: 100%; height: 45vh;" alt="First slide">
@@ -197,7 +215,12 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="orange.jpg" style="width: 100%; height: 45vh;" alt="Intro">
-                                <div class="carousel-caption d-none d-md-block">Here lies my first web portfolio, may it rest in peace. I hope the current one is an improvement!</div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="home">
+                                        <a href="#" class="btn" disabled><i class="fa fa-github"></i>Github Repo</a>
+                                    </div>
+                                    Here lies my first web portfolio, may it rest in peace. I hope the current one is an improvement!
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="oldPortfolio.gif" style="width: 100%; height: 45vh;" alt="First slide">
@@ -222,7 +245,12 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="green.jpg" style="width: 100%; height: 45vh;" alt="Intro">
-                                <div class="carousel-caption d-none d-md-block">Made from scratch in Python, a neural network consisting of one input and two sigmoid-activated layers that uses back-propagation to determine whether the input word is English or not. Click the button to learn more!</div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="home">
+                                        <a href="https://github.com/plopor/English-Detection-Neural-Network" target="_blank" class="btn"><i class="fa fa-github"></i>Github Repo</a>
+                                    </div>
+                                    Made from scratch in Python, a neural network consisting of one input and two sigmoid-activated layers that uses back-propagation to determine whether the input word is English or not.
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="net.png" style="width: 100%; height: 45vh;" alt="First slide">
@@ -240,14 +268,17 @@
                 </div>
             </div>
         </div>
+        <div class="credits">Designed and written by Bowen Luo. Last updated September 10, 2019.</div>
     </div>
     <script>
         var height = window.innerHeight;
         window.addEventListener('scroll', function () {
             var scrollTop = window.pageYOffset || window.scrollTop;
             var scrollPercent = scrollTop / height || 0;
-            document.getElementsByClassName("background")[0].style.backgroundPosition = 100 - (scrollPercent / 2) * 100 + '% 0%';
-            document.getElementsByClassName("otherStuff")[0].style.backgroundPosition = 100 - (scrollPercent / 2) * 100 + '% 0%';
+            if (scrollPercent < 2) {
+                document.getElementsByClassName("background")[0].style.backgroundPosition = 100 - Math.pow(scrollPercent, 0.5) * 50 + '% 0%';
+                document.getElementsByClassName("otherStuff")[0].style.backgroundPosition = 100 - Math.pow(scrollPercent, 0.5) * 50 + '% 0%';
+            }
         });
     </script>
 </body>
