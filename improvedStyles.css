@@ -117,17 +117,17 @@ body {
     color: #ffffff;
     padding: 0 2vw;
     opacity: 0.5;
-    border-radius: 25px;
+    border-radius: 10px;
     /*border: solid 1px #ffffff;*/
 }
 
     .dropText:hover {
-        background: #56734F;
+        background: #808080;
         opacity: 1;
     }
 
 .dropdown-menu {
-    background: #245F4D;
+    background: #202020;
     opacity: 0.5;
     padding: 1vmin 1vmin;
     border-radius: 10px;
@@ -142,7 +142,7 @@ body {
     align-items: center;
     border-radius: 12px;
     height: 8vh;
-    background: #DD4D48;
+    background: #202020;
     padding: 0 2vh;
     border: none;
     color: #ffffff;
@@ -150,8 +150,8 @@ body {
 }
 
     .btnIntro:hover {
-        background: #56734F;
-        color: #245F4D;
+        background: #ffffff;
+        color: #202020;
         text-decoration: none;
     }
 
@@ -195,7 +195,7 @@ body {
     }
 
 .home {
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     display: flex;
 }
 
@@ -205,12 +205,12 @@ body {
 }
 
 .projects {
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     display: flex;
 }
 
 .resume {
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     margin-left: 8vw;
     display: flex;
 }

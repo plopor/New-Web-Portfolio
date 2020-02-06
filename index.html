@@ -71,9 +71,9 @@
                     <div class="dropup">
                         <button href="#" class="btnIntro dropdown-toggle" style="display: block;" disabled data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope"></i> Contact Info</button>
                         <div class="dropdown-menu">
-                            <div class="dropText">Phone#: (647) 806 8859</div>
+                            <div class="dropText">647 806 8859</div>
                             <div class="dropdown-divider"></div>
-                            <div class="dropText">Email: bowen.luo@gmail.com</div>
+                            <div class="dropText">bowen.luo@gmail.com</div>
                         </div>
                     </div>
                     <a href="https://github.com/plopor" style="margin-left: 3vw;" target="_blank" class="btnIntro"><i class="fa fa-github"></i> Github</a>
@@ -125,6 +125,7 @@
                     inUse = true;
                     var glow = setInterval(function () {
                         flexHeader.style.top = '90vh';
+                        flexHeader.style.background = 'transparent';
                         if (opacity > 0.8) {
                             inUse = false;
                             fromTop = true;
@@ -156,6 +157,7 @@
                 else if (pastIntro && !inUse) {
                     inUse = true;
                     flexHeader.style.top = '0vh';
+                    flexHeader.style.background = 'grey';
                     var glow = setInterval(function () {
                         if (opacity > 0.8) {
                             inUse = false;
