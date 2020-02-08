@@ -262,6 +262,7 @@ body {
     height: 70%;
     width: 100%;
     justify-content: space-around;
+    overflow: auto;
 }
 
 .project {
