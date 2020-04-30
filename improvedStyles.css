@@ -194,6 +194,22 @@ body {
         color: #245F4D;
     }
 
+.btnCarou {
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 2vh 2vh;
+    border: none;
+    border-radius: 12px;
+    color: black;
+}
+
+    .btnCarou:hover {
+        color: white;
+        background: black;
+        text-decoration: none;
+    }
+
 .home {
     /*border: 1px solid #ffffff;*/
     display: flex;
@@ -275,6 +291,6 @@ body {
 .credits {
     background: transparent;
     color: #ffffff;
-    font-size: 2vh;
-    padding: 1vh 8vw;
+    font-size: 10px;
+    padding: 5px 5px;
 }
