@@ -49,6 +49,16 @@ body {
     margin-top: -100vh;
 }
 
+.animCliffs {
+    margin-top: -50vh;
+    position: unset;
+}
+
+.animCliffsBlur{
+    margin-top: -100vh;
+    position: unset;
+}
+
 .move {
     position: absolute;
     min-height: 100%;
@@ -61,6 +71,11 @@ body {
 }
 
 .treelineLeftFast {
+}
+
+.cliffs{
+    padding-right: 100vw;
+    z-index: 2;
 }
 
 .meContainer {
@@ -92,17 +107,27 @@ body {
 }
 
 .introContainer {
-    margin-top: 162vh;
+    position: sticky;
+    top: 0;
+    /*margin-top: 70vh;*/
     /*border: solid 1px #000000;*/
     color: #ffffff;
-    padding: 1px 1px;
+    padding-top: 70vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
     display: flex;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 1001;
+}
+
+.introInfo {
+    height: 20vh;
+    overflow-y: hidden;
 }
 
 .introButtons {
     display: flex;
+    height: 10vh;
     /*border: solid 1px #ffffff;*/
 }
 
@@ -117,7 +142,7 @@ body {
     color: #ffffff;
     padding: 0 2vw;
     opacity: 0.5;
-    border-radius: 10px;
+    border-radius: 5px;
     /*border: solid 1px #ffffff;*/
 }
 
@@ -167,10 +192,10 @@ body {
     justify-content: center;
     color: #ffffff;
     background: transparent;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 2vh 8vw;
     height: 10vh;
-    z-index: 1001;
+    z-index: 1003;
 }
 
 .header {
@@ -225,6 +250,80 @@ body {
     display: flex;
 }
 
+.carouselSect {
+    /*height: 150vh;*/
+    /*border: solid 1px #ffffff;*/
+    background-color: #04060c;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-top: 60vh;
+}
+
+.hills{
+    position: absolute;
+    margin-top: -30vh;
+    z-index: 1;
+}
+
+.projectContainer {
+    /*border: solid 1px #000000;*/
+    color: #ffffff;
+    padding: 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+    justify-content: space-evenly;
+    z-index: 1001;
+    position: relative;
+}
+
+.projCaption {
+    max-width: 25vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.projHeader {
+    padding-top: 5vh;
+    padding-left: 2vw;
+}
+
+.projMessage {
+    padding: 1vh 2vw;
+}
+
+.projAndCap {
+    border: 5px solid #ffffff;
+    width: 70vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.project {
+    border: 1px solid #ffffff;
+    width: 70vh;
+    height: 45vh;
+    margin-top: 5vh;
+    margin-right: 2vw;
+}
+
+.gap {
+    height: 10vh;
+    box-shadow: 0 8px 8px #13191A;
+    background-color: #04060c;
+    position: relative;
+    z-index: 1002;
+}
+
 .resume {
     /*border: 1px solid #ffffff;*/
     margin-left: 8vw;
@@ -232,10 +331,7 @@ body {
 }
 
 .otherStuff {
-    /*background-color: #0e0303;
-    opacity: 0.8;*/
-    box-shadow: 0 -8px 8px #13191A;
-    margin-top: 100vh;
+    /*background-color: #04060c;*/
     background: url("introInvertBG.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -247,50 +343,23 @@ body {
     justify-content: center;
     display: flex;
     padding: 3vh 8vw;
+    position: relative;
+    z-index: 1001;
 }
 
 .resumeContainer {
     display: flex;
     margin: 1px 1px;
+    width: 70vw;
     /*border: 1px solid #000000;*/
     justify-content: center;
     color: #ffffff;
-    z-index: 1000;
-}
-
-.carouselSect {
-    /*background: linear-gradient(to bottom, #245F4D, #56734F);*/
-    box-shadow: 0 -8px 8px #13191A;
-    height: 150vh;
-    /*border: solid 1px #ffffff;*/
-    align-items: center;
-    display: flex;
-    flex-direction: column; 
-    padding: 3vh 8vw;
-}
-
-.projectContainer {
-    /*border: solid 1px #000000;*/
-    color: #ffffff;
-    padding: 1px 1px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
-    width: 100%;
-    justify-content: space-around;
-    overflow: auto;
-}
-
-.project {
-    border: 1px solid #ffffff;
-    width: 70vh;
-    height: 45vh;
-    z-index: 1000;
+    padding-bottom: 5vh;
 }
 
 .credits {
     background: transparent;
-    color: #ffffff;
+    color: black;
     font-size: 10px;
     padding: 5px 5px;
 }
